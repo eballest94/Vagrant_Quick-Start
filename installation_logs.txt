@@ -1,0 +1,700 @@
+
+eballest@EBALLEST-83DNA MINGW64 ~/Desktop/Vagrant (master)
+$ vagrant destroy
+    default: Are you sure you want to destroy the 'default' VM? [y/N] y
+==> default: Forcing shutdown of VM...
+==> default: Destroying VM and associated drives...
+
+eballest@EBALLEST-83DNA MINGW64 ~/Desktop/Vagrant (master)
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'ubuntu/trusty64'...
+==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'ubuntu/trusty64' version '20190514.0.0' is up to date...
+==> default: Setting the name of the VM: Apache_VM
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 80 (guest) => 1234 (host) (adapter 1)
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default:
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default:
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default:
+    default: Guest Additions Version: 4.3.40
+    default: VirtualBox Version: 6.1
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => C:/Users/eballest/Desktop/Vagrant
+==> default: Running provisioner: shell...
+    default: Running: C:/Users/eballest/AppData/Local/Temp/vagrant-shell20200714-10244-p4s8xj.sh
+    default: Get:1 http://security.ubuntu.com trusty-security InRelease [65.9 kB]
+    default: Ign http://archive.ubuntu.com trusty InRelease
+    default: Get:2 http://archive.ubuntu.com trusty-updates InRelease [65.9 kB]
+    default: Get:3 http://security.ubuntu.com trusty-security/main Sources [172 kB]
+    default: Get:4 https://esm.ubuntu.com trusty-infra-security InRelease
+    default: Get:5 http://security.ubuntu.com trusty-security/universe Sources [103 kB]
+    default: Hit http://archive.ubuntu.com trusty-backports InRelease
+    default: Get:6 https://esm.ubuntu.com trusty-infra-updates InRelease
+    default: Hit http://archive.ubuntu.com trusty Release.gpg
+    default: Get:7 http://security.ubuntu.com trusty-security/main amd64 Packages [835 kB]
+    default: Get:8 https://esm.ubuntu.com trusty-infra-security/main amd64 Packages
+    default: Get:9 http://archive.ubuntu.com trusty-updates/main Sources [431 kB]
+    default: Get:10 https://esm.ubuntu.com trusty-infra-security/main Translation-en
+    default: Get:11 https://esm.ubuntu.com trusty-infra-updates/main Translation-en
+    default: Get:12 http://security.ubuntu.com trusty-security/universe amd64 Packages [295 kB]
+    default: Get:13 http://archive.ubuntu.com trusty-updates/restricted Sources [6313 B]
+    default: Get:14 http://archive.ubuntu.com trusty-updates/universe Sources [231 kB]
+    default: Get:15 http://security.ubuntu.com trusty-security/main Translation-en [448 kB]
+    default: Get:16 http://archive.ubuntu.com trusty-updates/multiverse Sources [7535 B]
+    default: Ign https://esm.ubuntu.com trusty-infra-security/main Translation-en
+    default: Get:17 http://archive.ubuntu.com trusty-updates/main amd64 Packages [1177 kB]
+    default: Ign https://esm.ubuntu.com trusty-infra-updates/main Translation-en
+    default: Get:18 http://security.ubuntu.com trusty-security/universe Translation-en [162 kB]
+    default: Get:19 http://archive.ubuntu.com trusty-updates/restricted amd64 Packages [17.2 kB]
+    default: Get:20 http://archive.ubuntu.com trusty-updates/universe amd64 Packages [525 kB]
+    default: Get:21 http://archive.ubuntu.com trusty-updates/multiverse amd64 Packages [14.6 kB]
+    default: Get:22 http://archive.ubuntu.com trusty-updates/main Translation-en [582 kB]
+    default: Get:23 http://archive.ubuntu.com trusty-updates/multiverse Translation-en [7616 B]
+    default: Get:24 http://archive.ubuntu.com trusty-updates/restricted Translation-en [4028 B]
+    default: Get:25 http://archive.ubuntu.com trusty-updates/universe Translation-en [281 kB]
+    default: Get:26 http://archive.ubuntu.com trusty-backports/main Sources [9709 B]
+    default: Get:27 http://archive.ubuntu.com trusty-backports/restricted Sources [28 B]
+    default: Get:28 http://archive.ubuntu.com trusty-backports/universe Sources [35.4 kB]
+    default: Get:29 http://archive.ubuntu.com trusty-backports/multiverse Sources [1896 B]
+    default: Hit http://archive.ubuntu.com trusty-backports/main amd64 Packages
+    default: Hit http://archive.ubuntu.com trusty-backports/restricted amd64 Packages
+    default: Hit http://archive.ubuntu.com trusty-backports/universe amd64 Packages
+    default: Hit http://archive.ubuntu.com trusty-backports/multiverse amd64 Packages
+    default: Hit http://archive.ubuntu.com trusty-backports/main Translation-en
+    default: Hit http://archive.ubuntu.com trusty-backports/multiverse Translation-en
+    default: Hit http://archive.ubuntu.com trusty-backports/restricted Translation-en
+    default: Hit http://archive.ubuntu.com trusty-backports/universe Translation-en
+    default: Hit http://archive.ubuntu.com trusty Release
+    default: Get:30 http://archive.ubuntu.com trusty/main Sources [1064 kB]
+    default: Get:31 http://archive.ubuntu.com trusty/restricted Sources [5433 B]
+    default: Get:32 http://archive.ubuntu.com trusty/universe Sources [6399 kB]
+    default: Get:33 http://archive.ubuntu.com trusty/multiverse Sources [174 kB]
+    default: Hit http://archive.ubuntu.com trusty/main amd64 Packages
+    default: Hit http://archive.ubuntu.com trusty/restricted amd64 Packages
+    default: Hit http://archive.ubuntu.com trusty/universe amd64 Packages
+    default: Hit http://archive.ubuntu.com trusty/multiverse amd64 Packages
+    default: Hit http://archive.ubuntu.com trusty/main Translation-en
+    default: Hit http://archive.ubuntu.com trusty/multiverse Translation-en
+    default: Hit http://archive.ubuntu.com trusty/restricted Translation-en
+    default: Hit http://archive.ubuntu.com trusty/universe Translation-en
+    default: Fetched 13.5 MB in 33s (406 kB/s)
+    default: Reading package lists...
+    default: Reading package lists...
+    default: Building dependency tree...
+    default: Reading state information...
+    default: The following packages will be upgraded:
+    default:   ubuntu-advantage-tools
+    default: 1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+    default: Need to get 47.3 kB of archives.
+    default: After this operation, 1024 B of additional disk space will be used.
+    default: Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main ubuntu-advantage-tools amd64 19.6~ubuntu14.04.4 [47.3 kB]
+    default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    default: Fetched 47.3 kB in 0s (69.9 kB/s)
+    default: (Reading database ... 63238 files and directories currently installed.)
+    default: Preparing to unpack .../ubuntu-advantage-tools_19.6~ubuntu14.04.4_amd64.deb ...
+    default: Unpacking ubuntu-advantage-tools (19.6~ubuntu14.04.4) over (19.6~ubuntu14.04.3) ...
+    default: Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+    default: Setting up ubuntu-advantage-tools (19.6~ubuntu14.04.4) ...
+    default: Reading package lists...
+    default: Building dependency tree...
+    default: Reading state information...
+    default: nano is already the newest version.
+    default: The following extra packages will be installed:
+    default:   ca-certificates-java fonts-dejavu-extra git-man java-common libasyncns0
+    default:   libatk-wrapper-java libatk-wrapper-java-jni liberror-perl libflac8 libgif4
+    default:   libgtk2.0-0 libgtk2.0-bin libgtk2.0-common libice-dev libnspr4 libnss3
+    default:   libnss3-nssdb libpcsclite1 libpthread-stubs0-dev libpulse0 libsctp1
+    default:   libsm-dev libsndfile1 libvorbisenc2 libx11-dev libx11-doc libxau-dev
+    default:   libxcb1-dev libxdmcp-dev libxt-dev lksctp-tools openjdk-7-jre tzdata-java
+    default:   x11proto-core-dev x11proto-input-dev x11proto-kb-dev xorg-sgml-doctools
+    default:   xtrans-dev
+    default: Suggested packages:
+    default:   git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+    default:   gitweb git-arch git-bzr git-cvs git-mediawiki git-svn default-jre equivs
+    default:   librsvg2-common gvfs libice-doc pcscd pulseaudio libsm-doc libxcb-doc
+    default:   libxt-doc openjdk-7-demo openjdk-7-source visualvm icedtea-7-plugin
+    default:   icedtea-7-jre-jamvm libnss-mdns sun-java6-fonts fonts-ipafont-gothic
+    default:   fonts-ipafont-mincho fonts-wqy-microhei fonts-wqy-zenhei ttf-indic-fonts
+    default: The following NEW packages will be installed:
+    default:   ca-certificates-java fonts-dejavu-extra git git-man java-common libasyncns0
+    default:   libatk-wrapper-java libatk-wrapper-java-jni liberror-perl libflac8 libgif4
+    default:   libgtk2.0-0 libgtk2.0-bin libgtk2.0-common libice-dev libnspr4 libnss3
+    default:   libnss3-nssdb libpcsclite1 libpthread-stubs0-dev libpulse0 libsctp1
+    default:   libsm-dev libsndfile1 libvorbisenc2 libx11-dev libx11-doc libxau-dev
+    default:   libxcb1-dev libxdmcp-dev libxt-dev lksctp-tools openjdk-7-jdk openjdk-7-jre
+    default:   openjdk-7-jre-headless tzdata-java x11proto-core-dev x11proto-input-dev
+    default:   x11proto-kb-dev xorg-sgml-doctools xtrans-dev
+    default: 0 upgraded, 41 newly installed, 0 to remove and 0 not upgraded.
+    default: Need to get 68.9 MB of archives.
+    default: After this operation, 142 MB of additional disk space will be used.
+    default: Get:1 http://archive.ubuntu.com/ubuntu/ trusty/main libasyncns0 amd64 0.8-4ubuntu2 [11.9 kB]
+    default: Get:2 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgtk2.0-common all 2.24.23-0ubuntu1.4 [121 kB]
+    default: Get:3 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgtk2.0-0 amd64 2.24.23-0ubuntu1.4 [1739 kB]
+    default: Get:4 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libnspr4 amd64 2:4.13.1-0ubuntu0.14.04.1 [110 kB]
+    default: Get:5 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libnss3-nssdb all 2:3.28.4-0ubuntu0.14.04.5 [10.6 kB]
+    default: Get:6 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libnss3 amd64 2:3.28.4-0ubuntu0.14.04.5 [1124 kB]
+    default: Get:7 http://archive.ubuntu.com/ubuntu/ trusty/main ca-certificates-java all 20130815ubuntu1 [13.4 kB]
+    default: Get:8 http://archive.ubuntu.com/ubuntu/ trusty-updates/main tzdata-java all 2019a-0ubuntu0.14.04 [70.0 kB]
+    default: Get:9 http://archive.ubuntu.com/ubuntu/ trusty/main java-common all 0.51 [130 kB]
+    default: Get:10 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libpcsclite1 amd64 1.8.10-1ubuntu1.1 [21.1 kB]
+    default: Get:11 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libflac8 amd64 1.3.0-2ubuntu0.14.04.1 [80.2 kB]
+    default: Get:12 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libvorbisenc2 amd64 1.3.2-1.3ubuntu1.2 [84.6 kB]
+    default: Get:13 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libsndfile1 amd64 1.0.25-7ubuntu2.2 [136 kB]
+    default: Get:14 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libpulse0 amd64 1:4.0-0ubuntu11.1 [225 kB]
+    default: Get:15 http://archive.ubuntu.com/ubuntu/ trusty/main libsctp1 amd64 1.0.15+dfsg-1 [9226 B]
+    default: Get:16 http://archive.ubuntu.com/ubuntu/ trusty-updates/main openjdk-7-jre-headless amd64 7u211-2.6.17-0ubuntu0.1 [39.6 MB]
+    default: Get:17 http://archive.ubuntu.com/ubuntu/ trusty/main libgif4 amd64 4.1.6-11 [28.6 kB]
+    default: Get:18 http://archive.ubuntu.com/ubuntu/ trusty-updates/main openjdk-7-jre amd64 7u211-2.6.17-0ubuntu0.1 [172 kB]
+    default: Get:19 http://archive.ubuntu.com/ubuntu/ trusty/main libatk-wrapper-java all 0.30.4-4 [30.2 kB]
+    default: Get:20 http://archive.ubuntu.com/ubuntu/ trusty/main libatk-wrapper-java-jni amd64 0.30.4-4 [25.2 kB]
+    default: Get:21 http://archive.ubuntu.com/ubuntu/ trusty/main fonts-dejavu-extra all 2.34-1ubuntu1 [1736 kB]
+    default: Get:22 http://archive.ubuntu.com/ubuntu/ trusty/main liberror-perl all 0.17-1.1 [21.1 kB]
+    default: Get:23 http://archive.ubuntu.com/ubuntu/ trusty-updates/main git-man all 1:1.9.1-1ubuntu0.10 [700 kB]
+    default: Get:24 http://archive.ubuntu.com/ubuntu/ trusty-updates/main git amd64 1:1.9.1-1ubuntu0.10 [2737 kB]
+    default: Get:25 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgtk2.0-bin amd64 2.24.23-0ubuntu1.4 [9774 B]
+    default: Get:26 http://archive.ubuntu.com/ubuntu/ trusty/main xorg-sgml-doctools all 1:1.11-1 [12.9 kB]
+    default: Get:27 http://archive.ubuntu.com/ubuntu/ trusty-updates/main x11proto-core-dev all 7.0.26-1~ubuntu2 [700 kB]
+    default: Get:28 http://archive.ubuntu.com/ubuntu/ trusty/main libice-dev amd64 2:1.0.8-2 [57.6 kB]
+    default: Get:29 http://archive.ubuntu.com/ubuntu/ trusty/main libpthread-stubs0-dev amd64 0.3-4 [4068 B]
+    default: Get:30 http://archive.ubuntu.com/ubuntu/ trusty/main libsm-dev amd64 2:1.2.1-2 [19.9 kB]
+    default: Get:31 http://archive.ubuntu.com/ubuntu/ trusty/main libxau-dev amd64 1:1.0.8-1 [11.1 kB]
+    default: Get:32 http://archive.ubuntu.com/ubuntu/ trusty/main libxdmcp-dev amd64 1:1.1.1-1 [26.9 kB]
+    default: Get:33 http://archive.ubuntu.com/ubuntu/ trusty/main x11proto-input-dev all 2.3-1 [139 kB]
+    default: Get:34 http://archive.ubuntu.com/ubuntu/ trusty/main x11proto-kb-dev all 1.0.6-2 [269 kB]
+    default: Get:35 http://archive.ubuntu.com/ubuntu/ trusty-updates/main xtrans-dev all 1.3.5-1~ubuntu14.04.2 [70.7 kB]
+    default: Get:36 http://archive.ubuntu.com/ubuntu/ trusty/main libxcb1-dev amd64 1.10-2ubuntu1 [76.6 kB]
+    default: Get:37 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libx11-dev amd64 2:1.6.2-1ubuntu2.1 [632 kB]
+    default: Get:38 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libx11-doc all 2:1.6.2-1ubuntu2.1 [1447 kB]
+    default: Get:39 http://archive.ubuntu.com/ubuntu/ trusty/main libxt-dev amd64 1:1.1.4-1 [455 kB]
+    default: Get:40 http://archive.ubuntu.com/ubuntu/ trusty/main lksctp-tools amd64 1.0.15+dfsg-1 [51.3 kB]
+    default: Get:41 http://archive.ubuntu.com/ubuntu/ trusty-updates/main openjdk-7-jdk amd64 7u211-2.6.17-0ubuntu0.1 [16.0 MB]
+    default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    default: Fetched 68.9 MB in 2min 47s (411 kB/s)
+    default: Selecting previously unselected package libasyncns0:amd64.
+    default: (Reading database ... 63238 files and directories currently installed.)
+    default: Preparing to unpack .../libasyncns0_0.8-4ubuntu2_amd64.deb ...
+    default: Unpacking libasyncns0:amd64 (0.8-4ubuntu2) ...
+    default: Selecting previously unselected package libgtk2.0-common.
+    default: Preparing to unpack .../libgtk2.0-common_2.24.23-0ubuntu1.4_all.deb ...
+    default: Unpacking libgtk2.0-common (2.24.23-0ubuntu1.4) ...
+    default: Selecting previously unselected package libgtk2.0-0:amd64.
+    default: Preparing to unpack .../libgtk2.0-0_2.24.23-0ubuntu1.4_amd64.deb ...
+    default: Unpacking libgtk2.0-0:amd64 (2.24.23-0ubuntu1.4) ...
+    default: Selecting previously unselected package libnspr4:amd64.
+    default: Preparing to unpack .../libnspr4_2%3a4.13.1-0ubuntu0.14.04.1_amd64.deb ...
+    default: Unpacking libnspr4:amd64 (2:4.13.1-0ubuntu0.14.04.1) ...
+    default: Selecting previously unselected package libnss3-nssdb.
+    default: Preparing to unpack .../libnss3-nssdb_2%3a3.28.4-0ubuntu0.14.04.5_all.deb ...
+    default: Unpacking libnss3-nssdb (2:3.28.4-0ubuntu0.14.04.5) ...
+    default: Selecting previously unselected package libnss3:amd64.
+    default: Preparing to unpack .../libnss3_2%3a3.28.4-0ubuntu0.14.04.5_amd64.deb ...
+    default: Unpacking libnss3:amd64 (2:3.28.4-0ubuntu0.14.04.5) ...
+    default: Selecting previously unselected package ca-certificates-java.
+    default: Preparing to unpack .../ca-certificates-java_20130815ubuntu1_all.deb ...
+    default: Unpacking ca-certificates-java (20130815ubuntu1) ...
+    default: Selecting previously unselected package tzdata-java.
+    default: Preparing to unpack .../tzdata-java_2019a-0ubuntu0.14.04_all.deb ...
+    default: Unpacking tzdata-java (2019a-0ubuntu0.14.04) ...
+    default: Selecting previously unselected package java-common.
+    default: Preparing to unpack .../java-common_0.51_all.deb ...
+    default: Unpacking java-common (0.51) ...
+    default: Selecting previously unselected package libpcsclite1:amd64.
+    default: Preparing to unpack .../libpcsclite1_1.8.10-1ubuntu1.1_amd64.deb ...
+    default: Unpacking libpcsclite1:amd64 (1.8.10-1ubuntu1.1) ...
+    default: Selecting previously unselected package libflac8:amd64.
+    default: Preparing to unpack .../libflac8_1.3.0-2ubuntu0.14.04.1_amd64.deb ...
+    default: Unpacking libflac8:amd64 (1.3.0-2ubuntu0.14.04.1) ...
+    default: Selecting previously unselected package libvorbisenc2:amd64.
+    default: Preparing to unpack .../libvorbisenc2_1.3.2-1.3ubuntu1.2_amd64.deb ...
+    default: Unpacking libvorbisenc2:amd64 (1.3.2-1.3ubuntu1.2) ...
+    default: Selecting previously unselected package libsndfile1:amd64.
+    default: Preparing to unpack .../libsndfile1_1.0.25-7ubuntu2.2_amd64.deb ...
+    default: Unpacking libsndfile1:amd64 (1.0.25-7ubuntu2.2) ...
+    default: Selecting previously unselected package libpulse0:amd64.
+    default: Preparing to unpack .../libpulse0_1%3a4.0-0ubuntu11.1_amd64.deb ...
+    default: Unpacking libpulse0:amd64 (1:4.0-0ubuntu11.1) ...
+    default: Selecting previously unselected package libsctp1:amd64.
+    default: Preparing to unpack .../libsctp1_1.0.15+dfsg-1_amd64.deb ...
+    default: Unpacking libsctp1:amd64 (1.0.15+dfsg-1) ...
+    default: Selecting previously unselected package openjdk-7-jre-headless:amd64.
+    default: Preparing to unpack .../openjdk-7-jre-headless_7u211-2.6.17-0ubuntu0.1_amd64.deb ...
+    default: Unpacking openjdk-7-jre-headless:amd64 (7u211-2.6.17-0ubuntu0.1) ...
+    default: Selecting previously unselected package libgif4:amd64.
+    default: Preparing to unpack .../libgif4_4.1.6-11_amd64.deb ...
+    default: Unpacking libgif4:amd64 (4.1.6-11) ...
+    default: Selecting previously unselected package openjdk-7-jre:amd64.
+    default: Preparing to unpack .../openjdk-7-jre_7u211-2.6.17-0ubuntu0.1_amd64.deb ...
+    default: Unpacking openjdk-7-jre:amd64 (7u211-2.6.17-0ubuntu0.1) ...
+    default: Selecting previously unselected package libatk-wrapper-java.
+    default: Preparing to unpack .../libatk-wrapper-java_0.30.4-4_all.deb ...
+    default: Unpacking libatk-wrapper-java (0.30.4-4) ...
+    default: Selecting previously unselected package libatk-wrapper-java-jni:amd64.
+    default: Preparing to unpack .../libatk-wrapper-java-jni_0.30.4-4_amd64.deb ...
+    default: Unpacking libatk-wrapper-java-jni:amd64 (0.30.4-4) ...
+    default: Selecting previously unselected package fonts-dejavu-extra.
+    default: Preparing to unpack .../fonts-dejavu-extra_2.34-1ubuntu1_all.deb ...
+    default: Unpacking fonts-dejavu-extra (2.34-1ubuntu1) ...
+    default: Selecting previously unselected package liberror-perl.
+    default: Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+    default: Unpacking liberror-perl (0.17-1.1) ...
+    default: Selecting previously unselected package git-man.
+    default: Preparing to unpack .../git-man_1%3a1.9.1-1ubuntu0.10_all.deb ...
+    default: Unpacking git-man (1:1.9.1-1ubuntu0.10) ...
+    default: Selecting previously unselected package git.
+    default: Preparing to unpack .../git_1%3a1.9.1-1ubuntu0.10_amd64.deb ...
+    default: Unpacking git (1:1.9.1-1ubuntu0.10) ...
+    default: Selecting previously unselected package libgtk2.0-bin.
+    default: Preparing to unpack .../libgtk2.0-bin_2.24.23-0ubuntu1.4_amd64.deb ...
+    default: Unpacking libgtk2.0-bin (2.24.23-0ubuntu1.4) ...
+    default: Selecting previously unselected package xorg-sgml-doctools.
+    default: Preparing to unpack .../xorg-sgml-doctools_1%3a1.11-1_all.deb ...
+    default: Unpacking xorg-sgml-doctools (1:1.11-1) ...
+    default: Selecting previously unselected package x11proto-core-dev.
+    default: Preparing to unpack .../x11proto-core-dev_7.0.26-1~ubuntu2_all.deb ...
+    default: Unpacking x11proto-core-dev (7.0.26-1~ubuntu2) ...
+    default: Selecting previously unselected package libice-dev:amd64.
+    default: Preparing to unpack .../libice-dev_2%3a1.0.8-2_amd64.deb ...
+    default: Unpacking libice-dev:amd64 (2:1.0.8-2) ...
+    default: Selecting previously unselected package libpthread-stubs0-dev:amd64.
+    default: Preparing to unpack .../libpthread-stubs0-dev_0.3-4_amd64.deb ...
+    default: Unpacking libpthread-stubs0-dev:amd64 (0.3-4) ...
+    default: Selecting previously unselected package libsm-dev:amd64.
+    default: Preparing to unpack .../libsm-dev_2%3a1.2.1-2_amd64.deb ...
+    default: Unpacking libsm-dev:amd64 (2:1.2.1-2) ...
+    default: Selecting previously unselected package libxau-dev:amd64.
+    default: Preparing to unpack .../libxau-dev_1%3a1.0.8-1_amd64.deb ...
+    default: Unpacking libxau-dev:amd64 (1:1.0.8-1) ...
+    default: Selecting previously unselected package libxdmcp-dev:amd64.
+    default: Preparing to unpack .../libxdmcp-dev_1%3a1.1.1-1_amd64.deb ...
+    default: Unpacking libxdmcp-dev:amd64 (1:1.1.1-1) ...
+    default: Selecting previously unselected package x11proto-input-dev.
+    default: Preparing to unpack .../x11proto-input-dev_2.3-1_all.deb ...
+    default: Unpacking x11proto-input-dev (2.3-1) ...
+    default: Selecting previously unselected package x11proto-kb-dev.
+    default: Preparing to unpack .../x11proto-kb-dev_1.0.6-2_all.deb ...
+    default: Unpacking x11proto-kb-dev (1.0.6-2) ...
+    default: Selecting previously unselected package xtrans-dev.
+    default: Preparing to unpack .../xtrans-dev_1.3.5-1~ubuntu14.04.2_all.deb ...
+    default: Unpacking xtrans-dev (1.3.5-1~ubuntu14.04.2) ...
+    default: Selecting previously unselected package libxcb1-dev:amd64.
+    default: Preparing to unpack .../libxcb1-dev_1.10-2ubuntu1_amd64.deb ...
+    default: Unpacking libxcb1-dev:amd64 (1.10-2ubuntu1) ...
+    default: Selecting previously unselected package libx11-dev:amd64.
+    default: Preparing to unpack .../libx11-dev_2%3a1.6.2-1ubuntu2.1_amd64.deb ...
+    default: Unpacking libx11-dev:amd64 (2:1.6.2-1ubuntu2.1) ...
+    default: Selecting previously unselected package libx11-doc.
+    default: Preparing to unpack .../libx11-doc_2%3a1.6.2-1ubuntu2.1_all.deb ...
+    default: Unpacking libx11-doc (2:1.6.2-1ubuntu2.1) ...
+    default: Selecting previously unselected package libxt-dev:amd64.
+    default: Preparing to unpack .../libxt-dev_1%3a1.1.4-1_amd64.deb ...
+    default: Unpacking libxt-dev:amd64 (1:1.1.4-1) ...
+    default: Selecting previously unselected package lksctp-tools.
+    default: Preparing to unpack .../lksctp-tools_1.0.15+dfsg-1_amd64.deb ...
+    default: Unpacking lksctp-tools (1.0.15+dfsg-1) ...
+    default: Selecting previously unselected package openjdk-7-jdk:amd64.
+    default: Preparing to unpack .../openjdk-7-jdk_7u211-2.6.17-0ubuntu0.1_amd64.deb ...
+    default: Unpacking openjdk-7-jdk:amd64 (7u211-2.6.17-0ubuntu0.1) ...
+    default: Processing triggers for ca-certificates (20170717~14.04.2) ...
+    default: Updating certificates in /etc/ssl/certs...
+    default: 0 added, 0 removed; done.
+    default: Running hooks in /etc/ca-certificates/update.d....
+    default: done.
+    default: Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+    default: Processing triggers for mime-support (3.54ubuntu1.1) ...
+    default: Processing triggers for hicolor-icon-theme (0.13-1) ...
+    default: Processing triggers for fontconfig (2.11.0-0ubuntu4.2) ...
+    default: Setting up libasyncns0:amd64 (0.8-4ubuntu2) ...
+    default: Setting up libgtk2.0-common (2.24.23-0ubuntu1.4) ...
+    default: Setting up libgtk2.0-0:amd64 (2.24.23-0ubuntu1.4) ...
+    default: Setting up libnspr4:amd64 (2:4.13.1-0ubuntu0.14.04.1) ...
+    default: Setting up tzdata-java (2019a-0ubuntu0.14.04) ...
+    default: Setting up java-common (0.51) ...
+    default: Setting up libpcsclite1:amd64 (1.8.10-1ubuntu1.1) ...
+    default: Setting up libflac8:amd64 (1.3.0-2ubuntu0.14.04.1) ...
+    default: Setting up libvorbisenc2:amd64 (1.3.2-1.3ubuntu1.2) ...
+    default: Setting up libsndfile1:amd64 (1.0.25-7ubuntu2.2) ...
+    default: Setting up libpulse0:amd64 (1:4.0-0ubuntu11.1) ...
+    default: Setting up libsctp1:amd64 (1.0.15+dfsg-1) ...
+    default: Setting up libgif4:amd64 (4.1.6-11) ...
+    default: Setting up fonts-dejavu-extra (2.34-1ubuntu1) ...
+    default: Setting up liberror-perl (0.17-1.1) ...
+    default: Setting up git-man (1:1.9.1-1ubuntu0.10) ...
+    default: Setting up git (1:1.9.1-1ubuntu0.10) ...
+    default: Setting up libgtk2.0-bin (2.24.23-0ubuntu1.4) ...
+    default: Setting up xorg-sgml-doctools (1:1.11-1) ...
+    default: Setting up x11proto-core-dev (7.0.26-1~ubuntu2) ...
+    default: Setting up libice-dev:amd64 (2:1.0.8-2) ...
+    default: Setting up libpthread-stubs0-dev:amd64 (0.3-4) ...
+    default: Setting up libsm-dev:amd64 (2:1.2.1-2) ...
+    default: Setting up libxau-dev:amd64 (1:1.0.8-1) ...
+    default: Setting up libxdmcp-dev:amd64 (1:1.1.1-1) ...
+    default: Setting up x11proto-input-dev (2.3-1) ...
+    default: Setting up x11proto-kb-dev (1.0.6-2) ...
+    default: Setting up xtrans-dev (1.3.5-1~ubuntu14.04.2) ...
+    default: Setting up libxcb1-dev:amd64 (1.10-2ubuntu1) ...
+    default: Setting up libx11-dev:amd64 (2:1.6.2-1ubuntu2.1) ...
+    default: Setting up libx11-doc (2:1.6.2-1ubuntu2.1) ...
+    default: Setting up libxt-dev:amd64 (1:1.1.4-1) ...
+    default: Setting up lksctp-tools (1.0.15+dfsg-1) ...
+    default: Setting up libnss3-nssdb (2:3.28.4-0ubuntu0.14.04.5) ...
+    default: Setting up libnss3:amd64 (2:3.28.4-0ubuntu0.14.04.5) ...
+    default: Setting up openjdk-7-jre-headless:amd64 (7u211-2.6.17-0ubuntu0.1) ...
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java to provide /usr/bin/java (java) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/orbd to provide /usr/bin/orbd (orbd) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+    default: Setting up openjdk-7-jre:amd64 (7u211-2.6.17-0ubuntu0.1) ...
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode
+    default: Setting up libatk-wrapper-java (0.30.4-4) ...
+    default: Setting up openjdk-7-jdk:amd64 (7u211-2.6.17-0ubuntu0.1) ...
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/appletviewer to provide /usr/bin/appletviewer (appletviewer) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/extcheck to provide /usr/bin/extcheck (extcheck) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/idlj to provide /usr/bin/idlj (idlj) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/javah to provide /usr/bin/javah (javah) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jhat to provide /usr/bin/jhat (jhat) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jsadebugd to provide /usr/bin/jsadebugd (jsadebugd) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/native2ascii to provide /usr/bin/native2ascii (native2ascii) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/rmic to provide /usr/bin/rmic (rmic) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/schemagen to provide /usr/bin/schemagen (schemagen) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/wsgen to provide /usr/bin/wsgen (wsgen) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/wsimport to provide /usr/bin/wsimport (wsimport) in auto mode
+    default: update-alternatives:
+    default: using /usr/lib/jvm/java-7-openjdk-amd64/bin/xjc to provide /usr/bin/xjc (xjc) in auto mode
+    default: Setting up ca-certificates-java (20130815ubuntu1) ...
+    default: Adding debian:EC-ACC.pem
+    default: Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+    default: Adding debian:AffirmTrust_Networking.pem
+    default: Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+    default: Adding debian:CA_Disig_Root_R2.pem
+    default: Adding debian:Certplus_Class_2_Primary_CA.pem
+    default: Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+    default: Adding debian:SZAFIR_ROOT_CA2.pem
+    default: Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+    default: Adding debian:Network_Solutions_Certificate_Authority.pem
+    default: Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+    default: Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem
+    default: Adding debian:Starfield_Class_2_CA.pem
+    default: Adding debian:SecureSign_RootCA11.pem
+    default: Adding debian:OISTE_WISeKey_Global_Root_GA_CA.pem
+    default: Adding debian:USERTrust_ECC_Certification_Authority.pem
+    default: Adding debian:COMODO_Certification_Authority.pem
+    default: Adding debian:DigiCert_Global_Root_G2.pem
+    default: Adding debian:thawte_Primary_Root_CA.pem
+    default: Adding debian:Buypass_Class_3_Root_CA.pem
+    default: Adding debian:ACEDICOM_Root.pem
+    default: Adding debian:CA_Disig_Root_R1.pem
+    default: Adding debian:Certplus_Root_CA_G2.pem
+    default: Adding debian:Taiwan_GRCA.pem
+    default: Adding debian:GeoTrust_Global_CA_2.pem
+    default: Adding debian:ePKI_Root_Certification_Authority.pem
+    default: Adding debian:UTN_USERFirst_Hardware_Root_CA.pem
+    default: Adding debian:QuoVadis_Root_CA_2.pem
+    default: Adding debian:Swisscom_Root_CA_1.pem
+    default: Adding debian:OpenTrust_Root_CA_G3.pem
+    default: Adding debian:DST_Root_CA_X3.pem
+    default: Adding debian:Security_Communication_Root_CA.pem
+    default: Adding debian:Certinomis_-_Root_CA.pem
+    default: Adding debian:Swisscom_Root_CA_2.pem
+    default: Adding debian:Certinomis_-_Autorit├⌐_Racine.pem
+    default: Adding debian:Cybertrust_Global_Root.pem
+    default: Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+    default: Adding debian:Amazon_Root_CA_3.pem
+    default: Adding debian:Amazon_Root_CA_1.pem
+    default: Adding debian:Atos_TrustedRoot_2011.pem
+    default: Adding debian:certSIGN_ROOT_CA.pem
+    default: Adding debian:COMODO_ECC_Certification_Authority.pem
+    default: Adding debian:Global_Chambersign_Root_-_2008.pem
+    default: Adding debian:GeoTrust_Global_CA.pem
+    default: Adding debian:Swisscom_Root_EV_CA_2.pem
+    default: Adding debian:China_Internet_Network_Information_Center_EV_Certificates_Root.pem
+    default: Adding debian:DST_ACES_CA_X6.pem
+    default: Adding debian:Secure_Global_CA.pem
+    default: Adding debian:EE_Certification_Centre_Root_CA.pem
+    default: Adding debian:AddTrust_Qualified_Certificates_Root.pem
+    default: Adding debian:AffirmTrust_Premium.pem
+    default: Adding debian:Baltimore_CyberTrust_Root.pem
+    default: Adding debian:QuoVadis_Root_CA.pem
+    default: Adding debian:DigiCert_Global_Root_G3.pem
+    default: Adding debian:DigiCert_Global_Root_CA.pem
+    default: Adding debian:SecureTrust_CA.pem
+    default: Adding debian:T├£B─░TAK_UEKAE_K├╢k_Sertifika_Hizmet_Sa─ƒlay─▒c─▒s─▒_-_S├╝r├╝m_3.pem
+    default: Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+    default: Adding debian:Buypass_Class_2_Root_CA.pem
+    default: Adding debian:GlobalSign_Root_CA.pem
+    default: Adding debian:Security_Communication_RootCA2.pem
+    default: Adding debian:Go_Daddy_Class_2_CA.pem
+    default: Adding debian:Certum_Root_CA.pem
+    default: Adding debian:VeriSign_Universal_Root_Certification_Authority.pem
+    default: Adding debian:Certum_Trusted_Network_CA.pem
+    default: Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+    default: Adding debian:Security_Communication_EV_RootCA1.pem
+    default: Adding debian:Staat_der_Nederlanden_Root_CA_-_G2.pem
+    default: Adding debian:thawte_Primary_Root_CA_-_G2.pem
+    default: Adding debian:E-Tugra_Certification_Authority.pem
+    default: Adding debian:AffirmTrust_Premium_ECC.pem
+    default: Adding debian:Trustis_FPS_Root_CA.pem
+    default: Adding debian:Comodo_Trusted_Services_root.pem
+    default: Adding debian:GlobalSign_Root_CA_-_R3.pem
+    default: Adding debian:Staat_der_Nederlanden_Root_CA_-_G3.pem
+    default: Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+    default: Adding debian:DigiCert_Assured_ID_Root_CA.pem
+    default: Adding debian:SwissSign_Gold_CA_-_G2.pem
+    default: Adding debian:Certum_Trusted_Network_CA_2.pem
+    default: Adding debian:CNNIC_ROOT.pem
+    default: Adding debian:Chambers_of_Commerce_Root_-_2008.pem
+    default: Adding debian:COMODO_RSA_Certification_Authority.pem
+    default: Adding debian:CFCA_EV_ROOT.pem
+    default: Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+    default: Adding debian:GlobalSign_Root_CA_-_R2.pem
+    default: Adding debian:Comodo_AAA_Services_root.pem
+    default: Adding debian:ACCVRAIZ1.pem
+    default: Adding debian:QuoVadis_Root_CA_2_G3.pem
+    default: Adding debian:Staat_der_Nederlanden_EV_Root_CA.pem
+    default: Adding debian:XRamp_Global_CA_Root.pem
+    default: Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+    default: Adding debian:GeoTrust_Universal_CA_2.pem
+    default: Adding debian:TWCA_Global_Root_CA.pem
+    default: Adding debian:Comodo_Secure_Services_root.pem
+    default: Adding debian:QuoVadis_Root_CA_3.pem
+    default: Adding debian:GeoTrust_Primary_Certification_Authority_-_G3.pem
+    default: Adding debian:DigiCert_Assured_ID_Root_G3.pem
+    default: Adding debian:Camerfirma_Chambers_of_Commerce_Root.pem
+    default: Adding debian:USERTrust_RSA_Certification_Authority.pem
+    default: Adding debian:GeoTrust_Universal_CA.pem
+    default: Adding debian:thawte_Primary_Root_CA_-_G3.pem
+    default: Adding debian:DigiCert_Trusted_Root_G4.pem
+    default: Adding debian:TeliaSonera_Root_CA_v1.pem
+    default: Adding debian:Certplus_Root_CA_G1.pem
+    default: Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem
+    default: Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+    default: Adding debian:T├£RKTRUST_Elektronik_Sertifika_Hizmet_Sa─ƒlay─▒c─▒s─▒_H5.pem
+    default: Adding debian:Entrust_Root_Certification_Authority.pem
+    default: Adding debian:AffirmTrust_Commercial.pem
+    default: Adding debian:QuoVadis_Root_CA_1_G3.pem
+    default: Adding debian:Hongkong_Post_Root_CA_1.pem
+    default: Adding debian:Amazon_Root_CA_4.pem
+    default: Adding debian:TWCA_Root_Certification_Authority.pem
+    default: Adding debian:GeoTrust_Primary_Certification_Authority.pem
+    default: Adding debian:GeoTrust_Primary_Certification_Authority_-_G2.pem
+    default: Adding debian:OpenTrust_Root_CA_G2.pem
+    default: Adding debian:Actalis_Authentication_Root_CA.pem
+    default: Adding debian:Deutsche_Telekom_Root_CA_2.pem
+    default: Adding debian:PSCProcert.pem
+    default: Adding debian:Certigna.pem
+    default: Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+    default: Adding debian:AC_RAIZ_FNMT-RCM.pem
+    default: Adding debian:OpenTrust_Root_CA_G1.pem
+    default: Adding debian:Sonera_Class_2_Root_CA.pem
+    default: Adding debian:QuoVadis_Root_CA_3_G3.pem
+    default: Adding debian:SwissSign_Silver_CA_-_G2.pem
+    default: Adding debian:ISRG_Root_X1.pem
+    default: Adding debian:TURKTRUST_Certificate_Services_Provider_Root_2007.pem
+    default: Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+    default: Adding debian:Visa_eCommerce_Root.pem
+    default: Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem
+    default: Adding debian:AddTrust_Public_Services_Root.pem
+    default: Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+    default: Adding debian:LuxTrust_Global_Root_2.pem
+    default: Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+    default: Adding debian:NetLock_Arany_=Class_Gold=_F┼ætan├║s├¡tv├íny.pem
+    default: Adding debian:AddTrust_Low-Value_Services_Root.pem
+    default: Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem
+    default: Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+    default: Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+    default: Adding debian:DigiCert_Assured_ID_Root_G2.pem
+    default: Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+    default: Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+    default: Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+    default: Adding debian:Amazon_Root_CA_2.pem
+    default: Adding debian:AddTrust_External_Root.pem
+    default: Adding debian:Camerfirma_Global_Chambersign_Root.pem
+    default: Adding debian:Izenpe.com.pem
+    default: done.
+    default: Setting up libatk-wrapper-java-jni:amd64 (0.30.4-4) ...
+    default: Processing triggers for libc-bin (2.19-0ubuntu6.15) ...
+    default: Processing triggers for ca-certificates (20170717~14.04.2) ...
+    default: Updating certificates in /etc/ssl/certs...
+    default: 0 added, 0 removed; done.
+    default: Running hooks in /etc/ca-certificates/update.d....
+    default: done.
+    default: done.
+    default: Reading package lists...
+    default: Building dependency tree...
+    default: Reading state information...
+    default: The following extra packages will be installed:
+    default:   apache2-bin apache2-data libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+    default:   libaprutil1-ldap ssl-cert
+    default: Suggested packages:
+    default:   apache2-doc apache2-suexec-pristine apache2-suexec-custom apache2-utils
+    default:   openssl-blacklist
+    default: The following NEW packages will be installed:
+    default:   apache2 apache2-bin apache2-data libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+    default:   libaprutil1-ldap ssl-cert
+    default: 0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+    default: Need to get 1289 kB of archives.
+    default: After this operation, 5369 kB of additional disk space will be used.
+    default: Get:1 http://archive.ubuntu.com/ubuntu/ trusty/main libapr1 amd64 1.5.0-1 [85.1 kB]
+    default: Get:2 http://archive.ubuntu.com/ubuntu/ trusty/main libaprutil1 amd64 1.5.3-1 [76.4 kB]
+    default: Get:3 http://archive.ubuntu.com/ubuntu/ trusty/main libaprutil1-dbd-sqlite3 amd64 1.5.3-1 [10.5 kB]
+    default: Get:4 http://archive.ubuntu.com/ubuntu/ trusty/main libaprutil1-ldap amd64 1.5.3-1 [8634 B]
+    default: Get:5 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apache2-bin amd64 2.4.7-1ubuntu4.22 [845 kB]
+    default: Get:6 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apache2-data all 2.4.7-1ubuntu4.22 [160 kB]
+    default: Get:7 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apache2 amd64 2.4.7-1ubuntu4.22 [87.4 kB]
+    default: Get:8 http://archive.ubuntu.com/ubuntu/ trusty/main ssl-cert all 1.0.33 [16.6 kB]
+    default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    default: Fetched 1289 kB in 4s (286 kB/s)
+    default: Selecting previously unselected package libapr1:amd64.
+    default: (Reading database ... 66456 files and directories currently installed.)
+    default: Preparing to unpack .../libapr1_1.5.0-1_amd64.deb ...
+    default: Unpacking libapr1:amd64 (1.5.0-1) ...
+    default: Selecting previously unselected package libaprutil1:amd64.
+    default: Preparing to unpack .../libaprutil1_1.5.3-1_amd64.deb ...
+    default: Unpacking libaprutil1:amd64 (1.5.3-1) ...
+    default: Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+    default: Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.3-1_amd64.deb ...
+    default: Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.3-1) ...
+    default: Selecting previously unselected package libaprutil1-ldap:amd64.
+    default: Preparing to unpack .../libaprutil1-ldap_1.5.3-1_amd64.deb ...
+    default: Unpacking libaprutil1-ldap:amd64 (1.5.3-1) ...
+    default: Selecting previously unselected package apache2-bin.
+    default: Preparing to unpack .../apache2-bin_2.4.7-1ubuntu4.22_amd64.deb ...
+    default: Unpacking apache2-bin (2.4.7-1ubuntu4.22) ...
+    default: Selecting previously unselected package apache2-data.
+    default: Preparing to unpack .../apache2-data_2.4.7-1ubuntu4.22_all.deb ...
+    default: Unpacking apache2-data (2.4.7-1ubuntu4.22) ...
+    default: Selecting previously unselected package apache2.
+    default: Preparing to unpack .../apache2_2.4.7-1ubuntu4.22_amd64.deb ...
+    default: Unpacking apache2 (2.4.7-1ubuntu4.22) ...
+    default: Selecting previously unselected package ssl-cert.
+    default: Preparing to unpack .../ssl-cert_1.0.33_all.deb ...
+    default: Unpacking ssl-cert (1.0.33) ...
+    default: Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+    default: Processing triggers for ufw (0.34~rc-0ubuntu2) ...
+    default: Processing triggers for ureadahead (0.100.0-16) ...
+    default: Setting up libapr1:amd64 (1.5.0-1) ...
+    default: Setting up libaprutil1:amd64 (1.5.3-1) ...
+    default: Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.3-1) ...
+    default: Setting up libaprutil1-ldap:amd64 (1.5.3-1) ...
+    default: Setting up apache2-bin (2.4.7-1ubuntu4.22) ...
+    default: Setting up apache2-data (2.4.7-1ubuntu4.22) ...
+    default: Setting up apache2 (2.4.7-1ubuntu4.22) ...
+    default: Enabling module mpm_event.
+    default: Enabling module authz_core.
+    default: Enabling module authz_host.
+    default: Enabling module authn_core.
+    default: Enabling module auth_basic.
+    default: Enabling module access_compat.
+    default: Enabling module authn_file.
+    default: Enabling module authz_user.
+    default: Enabling module alias.
+    default: Enabling module dir.
+    default: Enabling module autoindex.
+    default: Enabling module env.
+    default: Enabling module mime.
+    default: Enabling module negotiation.
+    default: Enabling module setenvif.
+    default: Enabling module filter.
+    default: Enabling module deflate.
+    default: Enabling module status.
+    default: Enabling conf charset.
+    default: Enabling conf localized-error-pages.
+    default: Enabling conf other-vhosts-access-log.
+    default: Enabling conf security.
+    default: Enabling conf serve-cgi-bin.
+    default: Enabling site 000-default.
+    default:  * Starting web server apache2
+    default: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+    default:  *
+    default: Setting up ssl-cert (1.0.33) ...
+    default: Processing triggers for libc-bin (2.19-0ubuntu6.15) ...
+    default: Processing triggers for ufw (0.34~rc-0ubuntu2) ...
+    default: Processing triggers for ureadahead (0.100.0-16) ...
+
+eballest@EBALLEST-83DNA MINGW64 ~/Desktop/Vagrant (master)
+$
